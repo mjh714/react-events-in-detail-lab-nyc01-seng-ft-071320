@@ -26,16 +26,11 @@ progress through the lab.
 
 #### `CoordinatesButton`
 
-1.  In the `components/CoordinatesButton.js` file, create a `CoordinatesButton`
-    React component.
+1.  In the `components/CoordinatesButton.js` file, create a `CoordinatesButton` React component.
 
-2.  This component takes in one prop: `onReceiveCoordinates`. This prop is a
-    _function_ passed down from `index.js`. This function is currently just logging
-    whatever is passed into it.
+2.  This component takes in one prop: `onReceiveCoordinates`. This prop is a _function_ passed down from `index.js`. This function is currently just logging whatever is passed into it.
 
-3.  Within `CoordinatesButton`, render a button. On click of the button,
-    create an array with two elements: the X and Y coordinates of the mouse. Find
-    these using the event data.
+3.  Within `CoordinatesButton`, render a button. On click of the button, create an array with two elements: the X and Y coordinates of the mouse. Find these using the event data.
 
 4.  Pass this event data in as the argument for the `onReceiveCoordinates` prop.
 
@@ -43,19 +38,14 @@ progress through the lab.
 
 #### `DelayedButton`
 
-1.  In the `components/DelayedButton.js` file, create a `DelayedButton` React
-    component
+1.  In the `components/DelayedButton.js` file, create a `DelayedButton` React component
 
-2.  This component takes two props: `onDelayedClick` (a function), and `delay` (a
-    number).
+2.  This component takes two props: `onDelayedClick` (a function), and `delay` (a number).
 
-3.  Create a button that, when clicked, will pass the click event to the
-    `onDelayedClick` prop _within_ a `setTimeout()`. The `setTimeout()`
-    should be set to `this.props.delay`.
+3.  Create a button that, when clicked, will pass the click event to the `onDelayedClick` prop _within_ a `setTimeout()`. The `setTimeout()` should be set to `this.props.delay`.
 
-4.  If successful, the event will be logged to the console once the timeout has
-    finished.
-    
+4.  If successful, the event will be logged to the console once the timeout has finished.
+
 5.  Hint: If you having trouble with this feature, remember event pooling in React. By the time the setTimeout fires, the event object will have already been returned to the pool. So how can we fix that?
 
 ## Resources
